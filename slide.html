@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://code.jquery.com/jquery-3.6.4.js" integrity="sha256-a9jBBRygX1Bh5lt8GZjXDzyOB+bWve9EiO7tROUtj/E=" crossorigin="anonymous"></script>
+    
+    <style>
+        div{
+            height: 200px;
+            width: 100%;
+        }
+        .div1{
+            background-color: brown;
+        }
+        .div3{
+            background-color: blue;
+        }
+    </style>
+    <script>
+        $(document).ready(function(){
+            $("#btn1").click(function(){
+                $(".div1").slideUp();
+            })
+            $("#btn2").click(function(){
+                $(".div1").slideDown();
+            })
+            $("#btn3").click(function(){
+                $(".div3").slideToggle(3000);
+                
+            })
+            $(".div3").mouseover(function(){
+                $(".div3").stop();
+                
+            })
+        })
+    </script>
+</head>
+<body>
+    <button id="btn1">slideup</button>
+    <button id="btn2">slidedoen</button>
+    <button id="btn3">slidetoggl</button>
+    <hr>
+    <div class="div1"></div>
+    <div class="div3"></div>
+</body>
+</html>

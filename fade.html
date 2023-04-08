@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://code.jquery.com/jquery-3.6.4.js" integrity="sha256-a9jBBRygX1Bh5lt8GZjXDzyOB+bWve9EiO7tROUtj/E=" crossorigin="anonymous"></script>
+    <style>
+        div{
+            height: 200px;
+            width: 200px;
+            margin: 10px;
+        }
+        .div1{
+            background-color: brown;
+            display: none;
+        }
+        .div2{
+           background-color: black;
+        }
+        .div3{
+            background-color: darkgreen;
+        }
+    </style>
+    <script>
+        $(document).ready(function(){
+            $("#btn1").click(function(){
+                $(".div1").fadeIn();
+            })
+             $("#btn2").click(function(){
+                $(".div2").fadeOut();
+            })
+             $("#btn3").click(function(){
+                $(".div3").fadeToggle();
+            })
+        })
+    </script>
+</head>
+<body>
+    <button id="btn1">fadein</button>
+    <button id="btn2">fadeout</button>
+    <button id="btn3">fadetoggle</button>
+    <hr>
+    <div class="div1"></div>
+    <div class="div2"></div>
+    <div class="div3"></div>
+</body>
+</html>
