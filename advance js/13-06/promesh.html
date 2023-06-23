@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let promish = new Promise((resolve, reject) => {
+            reject("not work");
+            console.log("----->");
+            setTimeout(()=>{
+                console.log("promish cancel");
+                resolve("done");
+            },5000)
+        })
+        promish
+        .then((res)=>{
+            console.log("----->");
+        })
+        .catch((eer)=> console.log("eer",eer));
+    </script>
+</body>
+</html>

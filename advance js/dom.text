@@ -1,0 +1,73 @@
+dom >
+call back ===> function in function in function argyment pass karvi
+
+x(), y()
+want to exicute x frist and then after exicute y
+
+ jo hame bad me call karvana he use funtion ko as argyment hame pass karna mhe dushre funtion me 
+
+ x(y())
+
+
+promish ==
+
+a=>b=>cal
+after=> promish()
+promish().then(b()).then(c()).catch((err)=>)
+
+
+javascript asycorn err hendling
+promish retun >1 resolv
+              > pending
+              >reject
+              > catch
+
+
+
+
+modul > pice of code 
+
+const f1 = require("/f1.js);
+
+
+export > modul.export
+
+
+task >  19-13
+min 
+round
+
+
+
+import f1 from './f1.js'
+
+
+hoisting > 
+s
+
+
+
+max> 
+min > 
+rendome > 
+round >
+trunt >
+flore > 
+ceil
+
+
+
+task > aary ma redus
+    > arry destruchr.  
+
+this not usde in arroy funtion
+
+
+
+------------------------------> 21-06-2023 <-----------------------------------------
+      JSON > stringify
+           > parse 
+
+           promis all > promish.all([pro1,pro2]).then(funtion(vakue)){
+            consol.log(value)
+           }

@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+    function calculator(){
+        function Calc(a,b){
+                 this.num1=a;
+                this.num2=b;
+
+                 this.task= function(){
+                    console.log(`addition ${this.num1+this.num2}`);
+                }
+            }
+            let c1 = new Calc(100,300);
+            c1.task();
+            let c2 = new Calc(120.23,124.56);
+            c2.task();
+
+    }
+</script>
+</head>
+<body>
+    <button onclick="calculator()">click</button>
+</body>
+</html>

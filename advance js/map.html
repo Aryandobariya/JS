@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function myfuntion(){
+            let fruts = ["apple","banan","orange"];
+            delete fruts[2];
+            console.log(fruts);
+            fruts.splice(1,1)
+            console.log(fruts);
+            let subject = ["aj","php","react","java","python"]
+            console.log (subject.slice(1,4));
+            console.log(fruts.concat(subject));
+            let arraynum =[15,16,17,18,19,120];
+            arraynum.sort(function(a,b){
+                return a-b//asc
+            });
+            console.log(arraynum);
+        }
+    </script>
+</head>
+<body>
+    <button onclick="myfuntion()">click</button>
+</body>
+</html>

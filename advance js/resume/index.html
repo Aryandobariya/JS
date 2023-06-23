@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- bootstrap  -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- css file  -->
+    <link rel="stylesheet" href="index.css">
+</head>
+
+<body>
+    <div class="container">
+        <h1 class="text-center my-3"> RESUME </h1>
+        <div class="row">
+            <div class="col-md-6">
+                <!-- frist col -->
+                <div class="form-group">
+                    <label for="name-fild">YOUR NAME</label>
+                    <input type="text" name="" id="namefild" class="form-control" placeholder="enter name">
+                </div>
+                <div class="form-group my-3">
+                    <label for="name-fild">YOUR CONTACT</label>
+                    <input type="text" name="" id="contact" class="form-control" placeholder="enter phone number">
+                </div>
+                <div class="form-group">
+                    <label for="name-fild">YOUR address</label>
+                    <textarea id="address" class="form-control" placeholder="enter address">
+                        </textarea>
+                </div>
+                <div class="form-group my-3">
+                    <label for="name-fild">FACBOOK</label>
+                    <input type="text" name="" id="facbook" class="form-control" placeholder="enter facbook link">
+                </div>
+                <div class="form-group my-3">
+                    <label for="name-fild">INSTAGRAM</label>
+                    <input type="text" name="" id="instagram" class="form-control" placeholder="enter instagarm link">
+                </div>
+                <div class="form-group my-3">
+                    <label for="name-fild">LINKEDIN</label>
+                    <input type="text" name="" id="linkedin" class="form-control" placeholder="enter linkedin link">
+                </div>
+            </div>
+            <div class="col-md-6">
+                <!-- second col -->
+                <div class="form-group">
+                    <label for="name-fild">objectiv</label>
+                    <textarea id="address" class="form-control objectivefild" placeholder="enter address">
+                        </textarea>
+                </div>
+                <div class="form-group " id="we">
+                    <label for="name-fild">WORK EX</label>
+                    <textarea id="address" class="form-control work" placeholder="enter address">
+                        </textarea>
+                        <div class="containar text-center mt-3">
+                            <button class="btn btn-primary" id="workadd" onclick="addNewfild()">add</button>
+                        </div>
+                </div>
+                <div class="form-group">
+                    <label for="name-fild">ACADEMIC Q</label>
+                    <textarea id="address" class="form-control academicfild " placeholder="enter address">
+                        </textarea>
+                        <div class="containar text-center mt-3">
+                            <button class="btn btn-primary" id="academicfildadd">add</button>
+                        </div>
+                </div>
+            </div>
+            <div class="containar text-center mt-3">
+                <button class="btn btn-primary btn-lg"> genrat CV</button>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- bootstrp js -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- js  -->
+    <script src="index.js"></script>
+</body>
+
+</html>

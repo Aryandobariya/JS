@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+<script>
+    function arrayex(){
+        let user = ["aryan","pankaj","pratik"];
+        console.log(user);
+        console.log(`length=${user.length}`);
+        user.push("vinod");
+        console.log(user);
+        user.pop("vinod");
+        console.log(user);
+        user.shift();
+        console.log(user);
+        user.unshift("vinod");
+        console.log(user);
+        for(u in user){
+            console.log(user[u])
+        }
+    }
+</script>
+</head>
+<body>
+    <button onclick="arrayex()">click</button>
+</body>
+</html>

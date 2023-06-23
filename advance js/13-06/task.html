@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        let person = [
+            { name: "kush", age: 12 },
+            { name: "tej", age: 10 },
+            { name: "smit", age: 18 },
+            { name: "ram", age: 20 },
+        ];
+
+        let names = person.map((a) => a.name);
+        console.log(names);
+
+
+        // age total
+        let totalAge = person.reduce( function(total, a){
+            total + a.age, 0
+        });
+        console.log(totalAge);
+
+
+
+        let count = 0;
+        for (let b in person) {
+            count++;
+        }
+
+        console.log("Number of people:", count);
+
+    </script>
+</body>
+
+</html>

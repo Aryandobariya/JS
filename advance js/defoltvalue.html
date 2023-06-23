@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<script>
+    function myFuntion(a,b,x){
+        let c;
+        c=a+b+x;
+        console.log(`additon of ${a} and ${b} and ${x}=${c}`)
+    }
+    function formAdd(){
+        let num1 =document.getElementById('num1').value;
+        let num2 =document.getElementById('num2').value;
+        let num3 =document.getElementById('num3').value;
+        num1 = Number(num1);
+        num2 = Number(num2);
+        num3 = Number(num3);
+        myFuntion(num1,num2,num3);
+    }
+    function pankaj(a,b){
+        return a*b
+    }
+    console.log(pankaj(80,40))
+   // devloper pankaj
+</script>    
+
+<body>
+    <form>
+        <input type="text" id="num1">
+        <input type="text" id="num2">
+        <input type="text" id="num3">
+       <input type="button" value="click"onclick="formAdd()">
+    </form>
+</body>
+
+</html>
